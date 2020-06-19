@@ -5,182 +5,203 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <meta charset="utf-8">
     <title>Shoes Store</title>
-    <link rel="icon" type="gif/image" href="https://image.flaticon.com/icons/png/512/819/819782.png">
+    <link rel="icon" type="gif/image" href="Images/favicon.png">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="container">
-		<div class="row">
+	<div class="row">
 
-			<div class="d-none text-light pt-2 my-1 d-lg-block col-lg-3">
-        		<p>Telephone: +37498111111</p>
-      		</div>
+		<div class="d-none text-light pt-2 my-1 d-lg-block col-lg-3">
+        	<p>Telephone: +37498111111</p>
+      	</div>
 
-			<div class="d-none text-light pt-2 my-1 d-lg-block col-lg-3">
-        		<p>Welcome to our store</p>
-      		</div>
+      	<div class="d-none text-light pt-2 my-1 d-lg-block col-lg-3">
+        	<p>Welcome to our store</p>
+      	</div>
 
-			<div class="input-group pt-2 col-sm-6 col-lg-2">
+      	<div class="input-group pt-2 col-sm-6 col-lg-2">
+        	<select class="custom-select" id="menuSelect1" aria-label="Example select with button addon">
+          		<option value="1">AM</option>
+          		<option value="2">RU</option>
+          		<option value="3">ENG</option>
+        	</select>
+      	</div>
 
-        		<select class="custom-select" id="menuSelect1" aria-label="Example select with button addon">
-          			<option value="1">AM</option>
-          			<option value="2">RU</option>
-          			<option value="3">ENG</option>
-        		</select>
+      	<div class="input-group pt-2 col-sm-6 col-lg-2">
+        	<select class="custom-select" id="menuSelect2" aria-label="Example select with button addon">
+          		<option value="1">Դ</option>
+          		<option value="2">₽</option>
+          		<option value="3">$</option>
+        	</select>
+      	</div>
 
-      		</div>
+      	<button type="button" class="btn btn-warning mt-2 h-25 w-24 d-none font-weight-bold d-lg-block col-lg-2">
+      		Wishlist<span class="badge badge-dark font-weight-bold ml-2">10</span>
+      	</button>
 
-      		<div class="input-group pt-2 col-sm-6 col-lg-2">
+      	<nav class="navbar navbar-dark bg-dark col-12">
 
-        		<select class="custom-select" id="menuSelect2" aria-label="Example select with button addon">
-          			<option value="1">Դ</option>
-          			<option value="2">₽</option>
-          			<option value="3">$</option>
-        		</select>
+			<a class="navbar-brand"><img class="navbar_link" src="Images/logo.png"></a>
 
-      		</div>
+			<form class="form-inline">
 
-      		<button type="button" class="btn btn-warning mt-2 h-25 w-24 d-none font-weight-bold d-lg-block col-lg-2">
-      			Wishlist<span class="badge badge-dark font-weight-bold ml-2">10</span>
-      		</button>
+          		<div class="d-none d-lg-block">
+            		<input class="form-control mr-sm-2" type="search" placeholder="Search . . . " aria-label="Search">
+            		<button class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
+          		</div>
 
+          		 <div class="dropdown ml-3">
 
-      		<nav class="navbar navbar-dark bg-dark col-12">
-
-				<a class="navbar-brand"><img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/80/3176890080_2b34917a-7388-4e36-8d28-4cebb876f256.png?cb=1592598437" style="width:100px; "></a>
-
-				<form class="form-inline">
-
-          			<div class="d-none d-lg-block">
-            			<input class="form-control mr-sm-2" type="search" placeholder="Search . . . " aria-label="Search">
-            			<button class="btn btn-warning font-weight-bold my-2 my-sm-0" type="submit">Search</button>
-          			</div>
-
-          			<div class="dropdown ml-3">
-
-            			<a class="btn btn-dark dropdown-toggle" href="#" role="button" id="myAccountLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             			My Account
-            			</a>
+            		<button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  		My account
+                	</button>
           
-            			<div class="dropdown-menu" aria-labelledby="myAccountLink">
-              				<a class="dropdown-item" href="#">Login</a>
-              				<a class="dropdown-item" href="#">Register</a>
-              				<a class="dropdown-item" href="#">My Orders</a>
-              				<a class="dropdown-item" href="#">Account Settings</a>
-            			</div>
+            		<div class="dropdown-menu" aria-labelledby="myAccountLink">
+              			<a class="dropdown-item" data-toggle="modal" data-target="#logInModal" href="#">Log in</a>
+              			<a class="dropdown-item" href="#">Register</a>
+              			<a class="dropdown-item" href="#">My Orders</a>
+              			<a class="dropdown-item" href="#">Account Settings</a>
+            		</div>
 
-          			</div>
-    
-        		</form>
+          		</div> 
 
-      		</nav>
+        	</form>
 
+      	</nav>
 
-			<nav class="navbar navbar-expand-lg navbar-dark bg-warning col-12"> 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    			<span class="navbar-toggler-icon"></span>
-  				</button>
+		<nav class="navbar navbar-expand-lg navbar-light bg-warning col-12">
+			<button class="navbar-toggler navbar-light navbar-brand" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  			</button>
 
-  				<div class="collapse navbar-collapse" id="navbarNav">
+  			<div class="collapse navbar-collapse" id="navbarNav">
 
-					<div class="dropdown col-lg-2">
-  						<button class="btn btn-warning font-weight-bold dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    						Category 1
-  						</button>
+				<div class="dropdown col-lg-2">
+  					<button class="btn btn-warning font-weight-bold dropdown-toggle text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    					for men
+  					</button>
 
-  						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    						<a class="dropdown-item" href="#">SubCategory 1</a>
-    						<a class="dropdown-item" href="#">SubCategory 2</a>
-    						<a class="dropdown-item" href="#">SubCategory 3</a>
-  						</div>
-					</div>
+  					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    					<a class="dropdown-item" href="#">Lifestyle</a>
+    					<a class="dropdown-item" href="#">Running</a>
+    					<a class="dropdown-item" href="#">Basketball</a>
+  					</div>
+				</div>
 
-					<div class="dropdown col-lg-2">
-  						<button class="btn btn-warning font-weight-bold dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    						Category 2
-  						</button>
+				<div class="dropdown col-lg-2">
+  					<button class="btn btn-warning font-weight-bold dropdown-toggle text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    					for women
+  					</button>
 
-  						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    						<a class="dropdown-item" href="#">SubCategory 1</a>
-    						<a class="dropdown-item" href="#">SubCategory 2</a>
-    						<a class="dropdown-item" href="#">SubCategory 3</a>
-  						</div>
-					</div>
+  					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    					<a class="dropdown-item" href="#">Jordan</a>
+    					<a class="dropdown-item" href="#">Soccer</a>
+    					<a class="dropdown-item" href="#">Tennis</a>
+    					<a class="dropdown-item" href="#">Shop All New</a>
+  					</div>
+				</div>
 
-					<div class="dropdown col-lg-2">
-  						<button class="btn btn-warning font-weight-bold dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    						Category 3
-  						</button>
+				<div class="dropdown col-lg-2">
+  					<button class="btn btn-warning font-weight-bold dropdown-toggle text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    					for kids
+  					</button>
 
-  						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    						<a class="dropdown-item" href="#">SubCategory 1</a>
-    						<a class="dropdown-item" href="#">SubCategory 2</a>
-    						<a class="dropdown-item" href="#">SubCategory 3</a>
-  						</div>
-					</div>
+  					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    					<a class="dropdown-item" href="#">Big Kids</a>
+    					<a class="dropdown-item" href="#">Little Kids</a>
+  					</div>
+				</div>
 
-					<div class="dropdown col-lg-2">
-  						<button class="btn btn-warning font-weight-bold dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    						Category 4
-  						</button>
+				<div class="dropdown col-lg-2">
+  					<button class="btn btn-warning font-weight-bold dropdown-toggle text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    					customize
+  					</button>
 
-  						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    						<a class="dropdown-item" href="#">SubCategory 1</a>
-    						<a class="dropdown-item" href="#">SubCategory 2</a>
-    						<a class="dropdown-item" href="#">SubCategory 3</a>
-  						</div>
-					</div>
+  					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    					<a class="dropdown-item" href="#">Training & Gym</a>
+    					<a class="dropdown-item" href="#">Softball</a>
+    					<a class="dropdown-item" href="#">Baby & Toddler</a>
+  					</div>
+				</div>
 
-					<div class="dropdown col-lg-2">
-  						<button class="btn btn-warning font-weight-bold dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    						Category 5
-  						</button>
+				<div class="dropdown col-lg-2">
+  					<button class="btn btn-warning font-weight-bold dropdown-toggle text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    					accessories
+  					</button>
 
-  						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    						<a class="dropdown-item" href="#">SubCategory 1</a>
-    						<a class="dropdown-item" href="#">SubCategory 2</a>
-    						<a class="dropdown-item" href="#">SubCategory 3</a>
-  						</div>
-					</div>
+  					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    					<a class="dropdown-item" href="#">Shoes</a>
+    					<a class="dropdown-item" href="#">Clothing</a>
+    					<a class="dropdown-item" href="#">Skateboarding</a>
+    					<a class="dropdown-item" href="#">Equipment</a>
+  					</div>
+				</div>
 
-					<div class="dropdown col-lg-2">
-  						<button class="btn btn-warning font-weight-bold dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    						Category 6
-  						</button>
+				<div class="dropdown col-lg-2">
+  					<button class="btn btn-warning font-weight-bold dropdown-toggle text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    					belts
+  					</button>
 
-  						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    						<a class="dropdown-item" href="#">SubCategory 1</a>
-    						<a class="dropdown-item" href="#">SubCategory 2</a>
-    						<a class="dropdown-item" href="#">SubCategory 3</a>
-  						</div>
-					</div>
+  					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    					<a class="dropdown-item" href="#">Belts for Men</a>
+    					<a class="dropdown-item" href="#">Belts for Women</a>
+  					</div>
+				</div>
 
-  				</div>	
+  			</div>	
 
-			</nav> 
-			
-		</div>
+		</nav> 
+
 	</div>
 
+	<div class="alert alert-dark alert-dismissible fade show mt-3 d-none d-md-block" role="alert">
+  			We don't work today, so the payment system doesn't work.
+  		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    		<span aria-hidden="true">&times;</span>
+  		</button>
+	</div>
+
+</div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 

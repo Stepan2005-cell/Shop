@@ -1,6 +1,7 @@
 body{
 	background: #0E0E0E;
 }
-/*.btn{
-	background-color: #FFC107;
-}*/
+.navbar_link{
+	width: 90px;
+	margin-bottom: 7px;
+}
