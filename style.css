@@ -1,7 +1,11 @@
 body{
-	background: #0E0E0E;
+	background: #000;
 }
 .navbar_link{
 	width: 90px;
 	margin-bottom: 7px;
+}
+.registerLoginCheckbox{
+	height: 15px;
+	width: 15px;
 }

@@ -21,7 +21,7 @@
       	</div>
 
       	<div class="input-group pt-2 col-sm-6 col-lg-2">
-        	<select class="custom-select" id="menuSelect1" aria-label="Example select with button addon">
+        	<select class="custom-select mb-2" id="menuSelect1" aria-label="Example select with button addon">
           		<option value="1">AM</option>
           		<option value="2">RU</option>
           		<option value="3">ENG</option>
@@ -29,7 +29,7 @@
       	</div>
 
       	<div class="input-group pt-2 col-sm-6 col-lg-2">
-        	<select class="custom-select" id="menuSelect2" aria-label="Example select with button addon">
+        	<select class="custom-select mb-2" id="menuSelect2" aria-label="Example select with button addon">
           		<option value="1">Դ</option>
           		<option value="2">₽</option>
           		<option value="3">$</option>
@@ -42,13 +42,13 @@
 
       	<nav class="navbar navbar-dark bg-dark col-12">
 
-			<a class="navbar-brand"><img class="navbar_link" src="Images/logo.png"></a>
+			<a class="navbar-brand" href="index.html"><img class="navbar_link" src="Images/logo.png"></a>
 
 			<form class="form-inline">
 
           		<div class="d-none d-lg-block">
             		<input class="form-control mr-sm-2" type="search" placeholder="Search . . . " aria-label="Search">
-            		<button class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
+            		<button class="btn btn-warning my-2 my-sm-0" type="submit">Search</button>
           		</div>
 
           		 <div class="dropdown ml-3">
@@ -59,7 +59,7 @@
           
             		<div class="dropdown-menu" aria-labelledby="myAccountLink">
               			<a class="dropdown-item" data-toggle="modal" data-target="#logInModal" href="#">Log in</a>
-              			<a class="dropdown-item" href="#">Register</a>
+              			<a class="dropdown-item" data-toggle="modal" data-target="#registerModal" href="#">Register</a>
               			<a class="dropdown-item" href="#">My Orders</a>
               			<a class="dropdown-item" href="#">Account Settings</a>
             		</div>
@@ -70,88 +70,89 @@
 
       	</nav>
 
-		<nav class="navbar navbar-expand-lg navbar-light bg-warning col-12">
-			<button class="navbar-toggler navbar-light navbar-brand" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    		<span class="navbar-toggler-icon"></span>
-  			</button>
+       	<nav class="navbar navbar-expand-lg navbar-light bg-warning col-12 ml-0 py-2">
+         	<button class="navbar-toggler navbar-light navbar-brand" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          	</button>
 
-  			<div class="collapse navbar-collapse" id="navbarNav">
+         	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto col-12 d-flex justify-content-around">
 
-				<div class="dropdown col-lg-2">
-  					<button class="btn btn-warning font-weight-bold dropdown-toggle text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    					for men
-  					</button>
+              		<li class="nav-item dropdown">
+                		<button class="btn btn-warning font-weight-bold dropdown-toggle text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    						for men
+  						</button>
 
-  					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    					<a class="dropdown-item" href="#">Lifestyle</a>
-    					<a class="dropdown-item" href="#">Running</a>
-    					<a class="dropdown-item" href="#">Basketball</a>
-  					</div>
-				</div>
+                		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    						<a class="dropdown-item" href="#">Lifestyle</a>
+    						<a class="dropdown-item" href="#">Running</a>
+    						<a class="dropdown-item" href="#">Basketball</a>
+  						</div>
+              		</li>
+              		
+              		<li class="nav-item dropdown">
+                		<button class="btn btn-warning font-weight-bold dropdown-toggle text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    						for women
+  						</button>
 
-				<div class="dropdown col-lg-2">
-  					<button class="btn btn-warning font-weight-bold dropdown-toggle text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    					for women
-  					</button>
+                		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    						<a class="dropdown-item" href="#">Jordan</a>
+    						<a class="dropdown-item" href="#">Soccer</a>
+    						<a class="dropdown-item" href="#">Tennis</a>
+    						<a class="dropdown-item" href="#">Shop All New</a>
+  						</div>
+              		</li>
+              
+             		<li class="nav-item dropdown">
+                		<button class="btn btn-warning font-weight-bold dropdown-toggle text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    						for kids
+  						</button>
 
-  					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    					<a class="dropdown-item" href="#">Jordan</a>
-    					<a class="dropdown-item" href="#">Soccer</a>
-    					<a class="dropdown-item" href="#">Tennis</a>
-    					<a class="dropdown-item" href="#">Shop All New</a>
-  					</div>
-				</div>
+                		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    						<a class="dropdown-item" href="#">Big Kids</a>
+    						<a class="dropdown-item" href="#">Little Kids</a>
+  						</div>
+              		</li>
+              
+              		<li class="nav-item dropdown">
+                		<button class="btn btn-warning font-weight-bold dropdown-toggle text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    						customize
+  						</button>
 
-				<div class="dropdown col-lg-2">
-  					<button class="btn btn-warning font-weight-bold dropdown-toggle text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    					for kids
-  					</button>
+                		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    						<a class="dropdown-item" href="#">Training & Gym</a>
+    						<a class="dropdown-item" href="#">Softball</a>
+    						<a class="dropdown-item" href="#">Baby & Toddler</a>
+  						</div>
+              		</li>
 
-  					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    					<a class="dropdown-item" href="#">Big Kids</a>
-    					<a class="dropdown-item" href="#">Little Kids</a>
-  					</div>
-				</div>
+              		<li class="nav-item dropdown">
+                		<button class="btn btn-warning font-weight-bold dropdown-toggle text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    						accessories
+  						</button>
 
-				<div class="dropdown col-lg-2">
-  					<button class="btn btn-warning font-weight-bold dropdown-toggle text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    					customize
-  					</button>
+                		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    						<a class="dropdown-item" href="#">Shoes</a>
+    						<a class="dropdown-item" href="#">Clothing</a>
+    						<a class="dropdown-item" href="#">Skateboarding</a>
+    						<a class="dropdown-item" href="#">Equipment</a>
+  						</div>
+              		</li>
 
-  					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    					<a class="dropdown-item" href="#">Training & Gym</a>
-    					<a class="dropdown-item" href="#">Softball</a>
-    					<a class="dropdown-item" href="#">Baby & Toddler</a>
-  					</div>
-				</div>
+              		<li class="nav-item dropdown">
+                		<button class="btn btn-warning font-weight-bold dropdown-toggle text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    						belts
+  						</button>
 
-				<div class="dropdown col-lg-2">
-  					<button class="btn btn-warning font-weight-bold dropdown-toggle text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    					accessories
-  					</button>
+                		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    						<a class="dropdown-item" href="#">Belts for Men</a>
+    						<a class="dropdown-item" href="#">Belts for Women</a>
+  						</div>
+              		</li>
 
-  					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    					<a class="dropdown-item" href="#">Shoes</a>
-    					<a class="dropdown-item" href="#">Clothing</a>
-    					<a class="dropdown-item" href="#">Skateboarding</a>
-    					<a class="dropdown-item" href="#">Equipment</a>
-  					</div>
-				</div>
-
-				<div class="dropdown col-lg-2">
-  					<button class="btn btn-warning font-weight-bold dropdown-toggle text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    					belts
-  					</button>
-
-  					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    					<a class="dropdown-item" href="#">Belts for Men</a>
-    					<a class="dropdown-item" href="#">Belts for Women</a>
-  					</div>
-				</div>
-
-  			</div>	
-
-		</nav> 
+            	</ul>  
+         	</div>
+        </nav>
 
 	</div>
 
@@ -172,6 +173,42 @@
 
 
 
+<div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+ 	<div class="modal-dialog" role="document">
+    	<div class="modal-content bg-light">
+      		<div class="modal-header bg-warning text-dark font-weight-bold">
+        		<h5 class="modal-title font-weight-bold" id="exampleModalLongTitle">Log In form</h5>
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          			<span aria-hidden="true">&times;</span>
+        		</button>
+      		</div>
+
+      		<div class="modal-body">
+
+        		<form>
+  					<div class="form-group">
+    					<label for="exampleInputEmail1" class="font-weight-bold">Email address</label>
+    					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  					</div>
+
+  					<div class="form-group">
+    					<label for="exampleInputPassword1" class="font-weight-bold">Password</label>
+    					<input type="password" class="form-control " id="exampleInputPassword1">
+  					</div>
+
+  					<div class="form-group form-check">
+    					<input type="checkbox" class="form-check-input registerLoginCheckbox" id="exampleCheck1">
+    					<label class="form-check-label font-weight-bold" for="exampleCheck1">I'm Not a Robot</label>
+  					</div>
+
+  					<button type="submit" class="btn btn-warning font-weight-bold">Sign In</button>
+
+				</form>
+      		</div>
+      
+    	</div>
+ 	</div>
+</div> 
 
 
 
@@ -183,46 +220,76 @@
 
 
 
-<div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+    <div class="modal-content bg-light">
+      <div class="modal-header bg-warning text-dark font-weight-bold">
+        <h5 class="modal-title font-weight-bold" id="exampleModalLabel">Registration form</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4" class="font-weight-bold">Email</label>
+      <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4" class="font-weight-bold">Password</label>
+      <input type="password" class="form-control" id="inputPassword4">
+    </div>
+  </div>
+  <div class="form-row">
+  	<div class="form-group col-6">
+    <label for="inputAddress" class="font-weight-bold">First Address</label>
+    <input type="text" class="form-control" id="inputAddress" >
+  </div>
+  <div class="form-group col-6">
+    <label for="inputAddress2" class="font-weight-bold">Second Address</label>
+    <input type="text" class="form-control" id="inputAddress2" >
+  </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity" class="font-weight-bold">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState" class="font-weight-bold">State</label>
+      <select id="inputState" class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip" class="font-weight-bold">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input registerLoginCheckbox" type="checkbox" id="gridCheck">
+      <label class="form-check-label font-weight-bold" for="gridCheck">
+        I'm Not a Robot
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-warning font-weight-bold">Sign Up</button>
+</form>
       </div>
     </div>
   </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
 
 
 
